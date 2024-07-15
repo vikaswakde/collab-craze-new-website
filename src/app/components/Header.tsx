@@ -1,22 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-gray-400 py-2">
+    <header className=" bg-gradient-to-r from-pink-500 to-[#A2074D] py-2 sticky top-0 z-50">
       <div className="max-w-7xl flex mx-auto items-center justify-between px-2 py-3">
-        <Link href="#">Logo</Link>
+        <Link href="#">
+          <Image
+            src={"/collabcraze-rectangular-logo.png"}
+            width="100"
+            height="50"
+            alt="logo"
+          />
+        </Link>
         <div className="hidden sm:block">
-          <ul className="flex gap-x-2 items-center justify-around ">
-            <li>About us</li>
-            <li>Curriculm</li>
-            <li>FAQs</li>
+          <ul className="flex gap-x-7 items-center justify-around font-mono text-lg ">
+            <Link href={"#"} className="hover:text-blue-300 ">
+              About us
+            </Link>
+            <Link href={"#"} className="hover:text-blue-300 ">
+              Curriculm
+            </Link>
+            <Link href={"#"} className="hover:text-blue-300 ">
+              FAQs
+            </Link>
           </ul>
         </div>
         <nav className="flex gap-x-2 items-center mr-2 ">
-          <Button className="mr-4">Contact Now</Button>
+          <Button className="mr-4 bg-pink-400">Contact Now</Button>
           <MenuIcon className="md:hidden" />
         </nav>
       </div>
