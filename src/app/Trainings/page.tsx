@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import InfoCards from "./components/InfoCards";
 import Number1Section from "./components/Number1Section";
+import FAQ from "./components/FAQ";
 
 const Trainings = () => {
   return (
@@ -11,6 +12,7 @@ const Trainings = () => {
         <div className="flex flex-col  items-center  justify-center">
           <InfoCards />
           <Number1Section />
+          <FAQ />
         </div>
       </div>
     </div>
