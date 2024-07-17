@@ -42,7 +42,7 @@ const InfoCards = () => {
           <div className="flex flex-col gap-y-3 mt-5 lg:flex-row lg:py-10">
             {cardData.map((card) => (
               <div
-                className="h-[16rem] max-w-xs bg-pink-300 rounded-lg text-black flex flex-col mx-auto items-start justify-evenly px-7 shadow lg:shadow-none lg:border-r-[#A2074D] lg:border-r lg:rounded-none lg:gap-x-2"
+                className="h-[16rem] max-w-xs bg-pink-300 rounded-2xl shadow-md text-black flex flex-col mx-auto items-start justify-evenly px-7  lg:shadow-none lg:border-r-[#A2074D] lg:border-r lg:rounded-none lg:gap-x-2"
                 key={card.no}
               >
                 <div className="flex flex-col flex-wrap gap-y-2 items-start justify-evenly ">

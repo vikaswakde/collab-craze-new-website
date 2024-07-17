@@ -40,7 +40,7 @@ import {
 
 const FAQ = () => {
   return (
-    <div className="lg:w-[50rem]  mx-auto">
+    <div className="lg:w-[50rem] md:min-w-[35rem]  mx-auto">
       <div className="flex  my-10 flex-col mx-2 gap-y-10">
         <h2 className="text-3xl font-semibold text-center mb-10">
           {" "}

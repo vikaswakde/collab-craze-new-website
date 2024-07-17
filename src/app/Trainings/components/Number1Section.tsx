@@ -33,8 +33,8 @@ const cardData = [
 
 const Number1Section = () => {
   return (
-    <div className="min-h-screen max-w-7xl lg:mt-16" id="number1section">
-      <div className="px-2 flex flex-col w-full text-center md:w-[40rem] lg:w-[60rem] xl:w-[80rem]">
+    <div className="min-h-screen lg:my-16 lg:min-h-fit max-w-7xl lg:mt-16" id="number1section">
+      <div className="px- flex flex-col w-full text-center md:w-[40rem] lg:w-[60rem] xl:w-[80rem]">
         <h2 className="text-[2rem] font-semibold">Learn from Pimpri&apos;s</h2>
         <span className=" text-[1.9rem] text-[#ac0b53] font-bold italic">
           No.1
@@ -44,10 +44,10 @@ const Number1Section = () => {
           corrupti velit consequuntur, consequatur culpa inventore tenetur vero
           perspiciatis odio quisquam unde!
         </p>
-        <div className="my-12 flex flex-col  gap-y-5 lg:grid lg:grid-cols-2 lg:col-span-2 lg:gap-4">
+        <div className="my-12 mx-5 flex flex-col  gap-y-5 lg:grid lg:grid-cols-2 lg:col-span-2 lg:gap-4 ">
           {cardData.map((card) => (
             <div
-              className="h-[12rem] flex flex-col px-4 py-4 rounded-xl  text-start bg-[#A2074D]"
+              className="h-[12rem]  flex flex-col px-4 py-4 rounded-2xl shadow-md  text-start bg-[#bb9fa5] "
               key={card.id}
             >
               <div className="w-[18rem]">
