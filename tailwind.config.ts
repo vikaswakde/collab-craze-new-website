@@ -1,20 +1,20 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "32px",
       screens: {
-        "2xl": "1400px",
+        "2xl": "87.5rem",
       },
     },
     extend: {
@@ -55,8 +55,8 @@ const config = {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - .125rem)",
+        sm: "calc(var(--radius) - .25rem)",
       },
       keyframes: {
         "accordion-down": {
@@ -67,14 +67,32 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "x-scroll-animation": {
+          "0%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(-100%)" },
+          "50.1%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "x-scroll-animation2": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-200%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        scroll: "scroll 2s linear infinite",
+        "x-scroll-animation":
+          "x-scroll-animation 20s linear infinite normal none running ",
+        "x-scroll-animation2": "x-scroll-animation2 20s linear infinite  ",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

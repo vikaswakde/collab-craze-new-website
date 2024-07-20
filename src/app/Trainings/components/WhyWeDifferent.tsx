@@ -29,23 +29,23 @@ const wwdData = [
 
 const WhyWeDifferent = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center my-10 w-[20rem] px-2 md:w-[37.5rem] lg:w-[55rem] xl:w-[60rem] 2xl:w-[70rem] mx-auto ">
+    <div className="min-h-screen xl:min-h-[25vh] flex flex-col items-center my-10 w-[20rem] px-2 md:w-[37.5rem] lg:w-[55rem] xl:w-[60rem] 2xl:w-[70rem] mx-auto ">
       <h1 className="text-2xl font-bold  text-center">
         Why is CollabCraze Different?
       </h1>
-      <div className="h-full py-5 flex flex-col  gap-y-5 lg:w-[55rem] xl:w-[60rem] 2xl:w-[70rem]">
+      <div className="h-full py-5 flex flex-col  gap-y-5 md:w-[40rem] lg:w-[55rem] xl:w-[60rem] 2xl:w-[70rem]">
         {wwdData.map((data) => (
           <div
-            className="flex flex-col lg:flex-row rounded-2xl bg-blue-400 lg:gap-x-5"
+            className="flex flex-col lg:flex-row rounded-2xl bg-[#ec368b] shadow lg:gap-x-5"
             key={data.id}
           >
             {data.id == 2 ? (
               <>
-                <div className="flex flex-col items-center justify-center gap-y-5 py-5 lg:px-5">
-                  <strong className="w-[15rem] text-2xl md:w-[20rem] lg:w-[25rem]">
+                <div className="flex flex-col items-center justify-center md:items-start md:px-10 gap-y-5 py-5 lg:px-5">
+                  <strong className="w-[15rem] text-2xl md:w-[25rem] lg:w-[30rem]">
                     {data.title}
                   </strong>
-                  <p className="text-center w-[16rem] md:w-[20rem] lg:w-[25rem]">
+                  <p className="text-start w-[16rem] md:w-[30rem] lg:w-[25rem]">
                     {data.desc}
                   </p>
                 </div>
@@ -68,11 +68,11 @@ const WhyWeDifferent = () => {
                     className="rounded-t-2xl lg:rounded-2xl object-cover "
                   />
                 </div>
-                <div className="flex flex-col items-center justify-center gap-y-5 py-5 lg:px-5">
-                  <strong className="w-[15rem] text-2xl md:w-[20rem] lg:w-[25rem]">
+                <div className="flex flex-col items-center md:items-start md:px-10 justify-center gap-y-5 py-5 lg:px-5">
+                  <strong className="w-[15rem] text-2xl md:text-[2rem] md:w-[23rem] lg:w-[25rem]">
                     {data.title}
                   </strong>
-                  <p className="text-center w-[16rem] md:w-[20rem] lg:w-[25rem]">
+                  <p className="text-start w-[16rem] md:w-[30rem] md:text-base">
                     {data.desc}
                   </p>
                 </div>
