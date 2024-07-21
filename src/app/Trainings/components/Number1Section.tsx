@@ -4,7 +4,7 @@ import React from "react";
 const cardData = [
   {
     id: 1,
-    title: "Ranked Technical Institue of Pune",
+    title: "Ranked Technical Institue in Pimpri",
     numValue: 1,
     numValueSuff: "st",
     img: "/number-1-image-1.png",
@@ -19,14 +19,14 @@ const cardData = [
   {
     id: 1,
     title: "Total Number of Alumni",
-    numValue: 100,
+    numValue: 30,
     numValueSuff: "+",
     img: "/number-1-image-3.png",
   },
   {
     id: 1,
     title: "Students Become Software Developers",
-    numValue: 30,
+    numValue: 8,
     numValueSuff: "+",
     img: "/number-1-image-4.png",
   },
@@ -40,7 +40,7 @@ const Number1Section = () => {
     >
       <div className="px- flex flex-col w-full text-center md:w-[40rem] lg:w-[60rem] xl:w-[80rem]">
         <h2 className="text-[2rem] font-semibold">Learn from Pimpri&apos;s</h2>
-        <span className=" text-[1.9rem] text-[#ac0b53] font-bold italic">
+        <span className=" text-[1.9rem] text-[#cea4b7] font-bold italic">
           No.1
         </span>
         <p className="px-1 py-2">

@@ -47,8 +47,8 @@ const cardRow3 = [
 
 const OppAfterCourse = () => {
   return (
-    <div className=" py-[5rem] px-[1rem] overflow-hidden align-baseline lg:min-w-[60rem]">
-      <div className="max-w-[37.5rem]  my-0 mx-auto  w-[20rem] md:w-[30rem] lg:min-w-[60rem] flex flex-col items-center ">
+    <div className=" py-[5rem] px-[1rem] overflow-hidden align-baseline lg:min-w-[80rem]">
+      <div className="max-w-[37.5rem]  my-0 mx-auto  w-[20rem] md:w-[30rem] lg:min-w-[80rem] flex flex-col items-center ">
         <div className="mb-[5rem] text-center p-0">
           <h2 className="font-semibold leading-[140%] text-3xl text-center">
             Job Opportunites After the Course
@@ -60,9 +60,9 @@ const OppAfterCourse = () => {
             Here are some of the roles you can pursue:
           </p>
         </div>
-        <div className="overflow-hidden my-0 mx-[-1rem] py-0 px-[1rem] max-w-[40rem]">
+        <div className="overflow-hidden my-0 mx-[-1rem] py-0 px-[1rem] max-w-[40rem] lg:animate-none">
           <div className="flex justify-start">
-            <div className="animate-x-scroll-animation flex justify-center">
+            <div className="animate-x-scroll-animation lg:animate-none flex justify-center">
               {cardRow1.map((card) => (
                 <div className="" key={card.id}>
                   <div className="flex items-center w-auto rounded-2xl shadow-lg  ml-2.5 relative bg-pink-500 shadow-[#97a1a5] py-3.5 px-[1.6rem] text-lg font-semibold border-transparent border-solid border-[2px] whitespace-nowrap">
@@ -71,7 +71,7 @@ const OppAfterCourse = () => {
                 </div>
               ))}
             </div>
-            <div className="animate-x-scroll-animation2 flex justify-center ml-0">
+            <div className="animate-x-scroll-animation2 lg:hidden flex justify-center ml-0">
               {cardRow1.map((card) => (
                 <div className="" key={card.id}>
                   <div className="flex items-center w-auto rounded-2xl shadow-lg  ml-2.5 relative bg-pink-500 shadow-[#97a1a5] py-3.5 px-[1.6rem] text-lg font-semibold border-transparent border-solid border-[2px] whitespace-nowrap">

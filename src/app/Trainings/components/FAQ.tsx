@@ -40,7 +40,7 @@ import {
 
 const FAQ = () => {
   return (
-    <div className="lg:w-[50rem] md:min-w-[35rem]  mx-auto">
+    <div className="lg:w-[50rem] md:min-w-[35rem]  mx-auto" id="fyq">
       <div className="flex  my-10 flex-col mx-2 gap-y-10">
         <h2 className="text-3xl font-semibold text-center mb-10">
           {" "}
@@ -53,11 +53,11 @@ const FAQ = () => {
                 {/* <p className="text-lg font-bold text-gray-600 bg px-1 rounded-full bg-[#999193]">
                     Q{data.id}
                   </p> */}
-                <AccordionTrigger className="font-semibold px-1 pt-0 pb-2 text-start ">
-                  {data.question}
+                <AccordionTrigger className="font-semibold px-1 pt-0 pb-2 text-start lg:text-xl ">
+                  {data.question}#FDDAF3
                 </AccordionTrigger>
-                <div className="px-5 py-4 text-[#dbcace]  text-lg font-medium">
-                  <AccordionContent>{data.answer}</AccordionContent>
+                <div className="px-5 py-4 text-white  font-medium ">
+                  <AccordionContent className="text-[18px]">{data.answer}</AccordionContent>
                 </div>
               </AccordionItem>
             </Accordion>

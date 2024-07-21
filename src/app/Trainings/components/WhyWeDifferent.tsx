@@ -68,7 +68,7 @@ const WhyWeDifferent = () => {
                     className="rounded-t-2xl lg:rounded-2xl object-cover "
                   />
                 </div>
-                <div className="flex flex-col items-center md:items-start md:px-10 justify-center gap-y-5 py-5 lg:px-5">
+                <div className="flex flex-col items-center md:items-start md:px-10 justify-center gap-y-5 py-5 lg:px-5 ">
                   <strong className="w-[15rem] text-2xl md:text-[2rem] md:w-[23rem] lg:w-[25rem]">
                     {data.title}
                   </strong>

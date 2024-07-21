@@ -19,14 +19,15 @@ import {
 const Header = () => {
   const [position, setPosition] = React.useState("bottom");
   return (
-    <header className=" bg-gradient-to-r from-pink-500 to-[#A2074D] py-2 sticky top-0 z-50">
-      <div className="max-w-7xl flex mx-auto items-center justify-between px-2 py-3">
+    <header className=" bg-gradient-to-r from-pink-300 to-[#A2074D] py-2 sticky top-0 z-50">
+      <div className="max-w-7xl flex mx-auto items-center justify-between px-2 py-1">
         <Link href="#">
           <Image
             src={"/collabcraze-rectangular-logo.png"}
-            width="100"
-            height="50"
+            width="180"
+            height="180"
             alt="logo"
+            className="p-0"
           />
         </Link>
         <div className="hidden sm:block">
@@ -37,12 +38,7 @@ const Header = () => {
               </Link>
             </Button>
             <Button variant={"link"}>
-              <Link href={"#"} className="hover:text-blue-300 ">
-                Curriculm
-              </Link>
-            </Button>
-            <Button variant={"link"}>
-              <Link href={"#"} className="hover:text-blue-300 ">
+              <Link href={"#fyq"} className="hover:text-blue-300 ">
                 FAQs
               </Link>
             </Button>
